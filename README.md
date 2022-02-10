@@ -7,6 +7,7 @@ Table 1: PMF of the initial distance between the robot and the object
 ||**d=10**|**d=11**|**d=12**|**d=13**|**d=14**|**d=15**|**d=16**|**d=17**|**d=18**|**d=19**|
 | :- | - | - | - | - | - | - | - | - | - | - |
 |<p>**P (d)**</p><p>**D**</p>|0.1|0.1|0.1|0.1|0.1|0.1|0.1|0.1|0.1|0.1|
+
 Let assume that all the movements are in one axis. At each time steps (1 unit of time) the object may randomly move to the left, to the right or stop. Let assume that the probability of the object moving to the left and right is the same and equal to POM.
 
 The robot will follow the object based on the following strategies. Note that at each time step, the robot will only have one movement. 
