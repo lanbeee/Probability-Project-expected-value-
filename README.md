@@ -1,33 +1,26 @@
-```
-EAS 502 Fall 2021
-Project 1 – due Nov 14h 11:59 PM
-```
-You are designing a strategy for a robot pursing an object. The initial distance between the robot and
-the object is a random variable D with a known PMF provided in Table 1.
+EAS 502 Fall 2021 Project 1 – due Nov 14h 11:59 PM
 
-```
+You are designing a strategy for a robot pursing an object. The initial distance between the robot and the object is a random variable D with a known PMF provided in Table 1. 
+
 Table 1: PMF of the initial distance between the robot and the object
-d=10 d=11 d=12 d=13 d=14 d=15 d=16 d=17 d=18 d=
-PD(d) 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.
-```
-Let assume that all the movements are in one axis. At each time steps (1 unit of time) the object may
-randomly move to the left, to the right or stop. Let assume that the probability of the object moving to
-the left and right is the same and equal to POM.
 
-The robot will follow the object based on the following strategies. Note that at each time step, the robot
-will only have one movement.
+||**d=10**|**d=11**|**d=12**|**d=13**|**d=14**|**d=15**|**d=16**|**d=17**|**d=18**|**d=19**|
+| :- | - | - | - | - | - | - | - | - | - | - |
+|<p>**P (d)**</p><p>**D**</p>|0.1|0.1|0.1|0.1|0.1|0.1|0.1|0.1|0.1|0.1|
+Let assume that all the movements are in one axis. At each time steps (1 unit of time) the object may randomly move to the left, to the right or stop. Let assume that the probability of the object moving to the left and right is the same and equal to POM.
 
-- **Strategy 1:** At each unit of time, the robot will move 1 unit toward the object regardless of the
-    object movement.
-- **Strategy 2*:** At each unit of time, the robot will move 1 unit toward the object (with the
-    probability of 1.5 POM ) or will stop (with the probability of 1-1.5Pom) regardless of the object
-    movement.
-- **Strategy 3:** At each unit of time, the robot will move 1 unit toward the object if the object
-    moves to either left or right, and the robot will stop if the object stops.
-1. Analytically find the expected value of time for the robot to catch the object using Strategy 1
-    and 3.
-2. Write a MATLAB code to calculate the above expected values for POM : 0.1, 0.2, 0.3, 0.4 and 0.
-    and list them in a Table.
+The robot will follow the object based on the following strategies. Note that at each time step, the robot will only have one movement. 
+
+- **Strategy 1:** At each unit of time, the robot will move 1 unit toward the object regardless of the object movement. 
+- **Strategy 2\*:** At each unit of time, the robot will move 1 unit toward the object (with the probability of 1.5 P ) or will stop (with the probability of 1-1.5Pom) regardless of the object 
+
+OM 
+
+movement.
+
+- **Strategy 3:** At each unit of time, the robot will move 1 unit toward the object if the object moves to either left or right, and the robot will stop if the object stops. 
+1. Analytically find the expected value of time for the robot to catch the object using Strategy 1 and 3. 
+2. Write a MATLAB code to calculate the above expected values for POM : 0.1, 0.2, 0.3, 0.4 and 0.5 and list them in a Table.
 3. Extra points (20%): Redo the above process for Strategy 2
 
 # EAS-502 Project 1
